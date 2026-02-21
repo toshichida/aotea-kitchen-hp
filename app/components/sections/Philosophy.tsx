@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '@/lib/contexts/LanguageContext';
+import { imgPath } from '@/lib/utils';
 
 export const Philosophy = () => {
     const { language } = useLanguage();
@@ -58,7 +59,7 @@ export const Philosophy = () => {
                             style={{ y: y2 }}
                             className="absolute top-0 right-0 w-3/4 h-3/4 bg-stone-300 rounded-lg shadow-2xl z-0 overflow-hidden"
                         >
-                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url("/images/3. Philosophy Section - Japan.png")' }}>
+                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url("${imgPath('/images/3. Philosophy Section - Japan.png')}")` }}>
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 text-white font-serif">JP Ingredients</div>
                             </div>
                         </motion.div>
@@ -66,7 +67,7 @@ export const Philosophy = () => {
                             style={{ y: y1 }}
                             className="absolute bottom-0 left-0 w-3/4 h-3/4 bg-stone-200 rounded-lg shadow-2xl z-10 overflow-hidden border-4 border-forest"
                         >
-                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url("/images/4. Philosophy Section - New Zealand.png")' }}>
+                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url("${imgPath('/images/4. Philosophy Section - New Zealand.png')}")` }}>
                                 <div className="absolute inset-0 flex items-center justify-center bg-black/20 text-white font-serif">NZ Ingredients</div>
                             </div>
                         </motion.div>

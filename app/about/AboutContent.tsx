@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
 import { useLanguage } from '@/lib/contexts/LanguageContext';
+import { imgPath } from '@/lib/utils';
 
 export default function AboutContent() {
     const { language } = useLanguage();
@@ -14,7 +15,7 @@ export default function AboutContent() {
             <Header />
             <main className="bg-cream min-h-screen pt-24 pb-16">
                 <section className="relative h-[60vh] flex items-center justify-center overflow-hidden mb-16">
-                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/images/2. About Page Hero.png")', backgroundColor: '#2C5F4F' }}>
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url("${imgPath('/images/2. About Page Hero.png')}")`, backgroundColor: '#2C5F4F' }}>
                         <div className="absolute inset-0 bg-black/40" />
                     </div>
                     <div className="container mx-auto px-4 relative z-10 text-center text-cream">
@@ -50,7 +51,7 @@ export default function AboutContent() {
                 <section className="container mx-auto px-4 mb-24 grid md:grid-cols-2 gap-12 items-center">
                     <div className="order-2 md:order-1">
                         <div className="aspect-[4/5] bg-stone-200 rounded-lg overflow-hidden">
-                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url("/images/15. Owner Portrait (Proxy).png")' }} />
+                            <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url("${imgPath('/images/15. Owner Portrait (Proxy).png')}")` }} />
                         </div>
                     </div>
                     <div className="order-1 md:order-2 space-y-6">

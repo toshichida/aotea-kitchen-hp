@@ -6,6 +6,7 @@ import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
 import { useLanguage } from '@/lib/contexts/LanguageContext';
 import Link from 'next/link';
+import { imgPath } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
 
 export const FeaturedMenu = () => {
@@ -17,28 +18,28 @@ export const FeaturedMenu = () => {
             name: language === 'en' ? 'Matcha Pancakes' : '抹茶パンケーキ',
             price: '$18.50',
             description: language === 'en' ? 'Fluffy Japanese-style pancakes infused with premium matcha.' : 'プレミアム抹茶を練り込んだふわふわのパンケーキ。',
-            image: '/images/5. Menu - Matcha Pancakes.png',
+            image: imgPath('/images/5. Menu - Matcha Pancakes.png'),
             tags: ['Vegetarian']
         },
         {
             name: language === 'en' ? 'Miso Glazed Salmon' : '味噌サーモン',
             price: '$24.00',
             description: language === 'en' ? 'Fresh King Salmon glazed with house-made miso.' : '自家製味噌で仕上げた新鮮なキングサーモン。',
-            image: '/images/6. Menu - Miso Glazed Salmon.png',
+            image: imgPath('/images/6. Menu - Miso Glazed Salmon.png'),
             tags: ['GF Available']
         },
         {
             name: language === 'en' ? 'Wagyu Katsu Sando' : '和牛カツサンド',
             price: '$22.00',
             description: language === 'en' ? 'Premium NZ Wagyu, panko-crusted in soft shokupan.' : '柔らかな食パンに挟んだプレミアムNZ和牛カツ。',
-            image: '/images/7. Menu - Wagyu Katsu Sando.png',
+            image: imgPath('/images/7. Menu - Wagyu Katsu Sando.png'),
             tags: []
         },
         {
             name: language === 'en' ? 'Fruit Daifuku' : 'フルーツ大福',
             price: '$8.50',
             description: language === 'en' ? 'Delicate mochi filled with seasonal NZ fruits.' : '季節のNZフルーツを包んだ繊細な大福。',
-            image: '/images/8. Menu - Fruit Daifuku.png',
+            image: imgPath('/images/8. Menu - Fruit Daifuku.png'),
             tags: ['Vegan']
         }
     ];

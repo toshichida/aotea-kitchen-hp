@@ -4,17 +4,18 @@ import React from 'react';
 import { Header } from '../components/layout/Header';
 import { Footer } from '../components/layout/Footer';
 import { useLanguage } from '@/lib/contexts/LanguageContext';
+import { imgPath } from '@/lib/utils';
 
 export default function SpacePage() {
     const { language } = useLanguage();
 
     const galleryImages = [
-        '/images/9. Space - Main Hall.png',
-        '/images/10. Space - Quiet Corner.png',
-        '/images/11. Space - Window Seat.png',
-        '/images/12. Space - Counter.png',
-        '/images/13. Space - Detail 1 (Texture:Decor).png',
-        '/images/14. Space - Detail 2 (Plant:Nature).png',
+        imgPath('/images/9. Space - Main Hall.png'),
+        imgPath('/images/10. Space - Quiet Corner.png'),
+        imgPath('/images/11. Space - Window Seat.png'),
+        imgPath('/images/12. Space - Counter.png'),
+        imgPath('/images/13. Space - Detail 1 (Texture:Decor).png'),
+        imgPath('/images/14. Space - Detail 2 (Plant:Nature).png'),
     ];
 
     return (

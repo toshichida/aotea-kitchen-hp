@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { useLanguage } from '@/lib/contexts/LanguageContext';
+import { imgPath } from '@/lib/utils';
 
 export const Hero = () => {
     const { t } = useLanguage();
@@ -14,7 +15,7 @@ export const Hero = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center z-0"
                 style={{
-                    backgroundImage: 'url("/images/1. Homepage Hero.png")',
+                    backgroundImage: `url("${imgPath('/images/1. Homepage Hero.png')}")`,
                     backgroundColor: '#2C5F4F' // Fallback
                 }}
             >

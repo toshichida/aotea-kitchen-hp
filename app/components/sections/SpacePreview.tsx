@@ -5,15 +5,16 @@ import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
 import { useLanguage } from '@/lib/contexts/LanguageContext';
 import Link from 'next/link';
+import { imgPath } from '@/lib/utils';
 
 export const SpacePreview = () => {
     const { language } = useLanguage();
 
     const spaces = [
-        { title: 'The Main Hall', image: '/images/9. Space - Main Hall.png', colSpan: 'md:col-span-2' },
-        { title: 'Quiet Corner', image: '/images/10. Space - Quiet Corner.png', colSpan: 'md:col-span-1' },
-        { title: 'Window Seat', image: '/images/11. Space - Window Seat.png', colSpan: 'md:col-span-1' },
-        { title: 'Counter', image: '/images/12. Space - Counter.png', colSpan: 'md:col-span-2' },
+        { title: 'The Main Hall', image: imgPath('/images/9. Space - Main Hall.png'), colSpan: 'md:col-span-2' },
+        { title: 'Quiet Corner', image: imgPath('/images/10. Space - Quiet Corner.png'), colSpan: 'md:col-span-1' },
+        { title: 'Window Seat', image: imgPath('/images/11. Space - Window Seat.png'), colSpan: 'md:col-span-1' },
+        { title: 'Counter', image: imgPath('/images/12. Space - Counter.png'), colSpan: 'md:col-span-2' },
     ];
 
     return (
